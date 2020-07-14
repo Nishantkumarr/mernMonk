@@ -9,6 +9,16 @@ const Users =require("./routes/api/Users");
 const Profile =require("./routes/api/Profile");
 const Post =require("./routes/api/Post");
 
+//importing bodyParser for registeration things
+const bodyParser=require("body-parser")
+
+
+
+//middlewares for body parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended:false}));
+
+
 
 
 //DB config 
@@ -31,7 +41,7 @@ mongoose
 
 
 //ROUTES
-app.use('/api/users',Users)
+app.use('/api/user',Users)
 app.use('/api/profile/',Profile)
 app.use('/api/post',Post)
 
