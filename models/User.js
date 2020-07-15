@@ -8,7 +8,7 @@ const schema = mongoose.Schema;
 
 
 //create Schema
-const userSchema= new schema ({
+const userschema= new schema ({
     name:{
         type:String,
         required:true,
@@ -39,4 +39,4 @@ const userSchema= new schema ({
 
 
 
-module.exports=mongoose.model('users',userSchema)
+module.exports=mongoose.model('users',userschema)

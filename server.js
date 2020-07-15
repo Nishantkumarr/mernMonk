@@ -5,9 +5,12 @@ const mongoose = require("mongoose");
 
 
 //Getting Routes 
-const Users =require("./routes/api/Users");
-const Profile =require("./routes/api/Profile");
-const Post =require("./routes/api/Post");
+const Users =require("./routes/api/users");
+const Profile =require("./routes/api/profiles");
+const Post =require("./routes/api/posts");
+
+
+
 
 //importing bodyParser for registeration things
 const bodyParser=require("body-parser")
